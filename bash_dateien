@@ -15,3 +15,13 @@ A few other notes:
     Anything that should be available only to login shells should go in ~/.profile
 
     Ensure that ~/.bash_login does not exist.
+
+
+
+
+
+!!!!! FOR MAC USERS
+
+
+Note: The Xterm application installed as part of Xquartz runs .bashrc when a new window opens, 
+not .bash_profile. Other third-party terminal applications on macOS may follow the precedent set by Terminal.app or not.
