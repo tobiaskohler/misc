@@ -14,6 +14,8 @@ call vundle#begin()
         Plugin 'preservim/nerdtree'
         Plugin 'VundleVim/Vundle.vim'
         Plugin 'sickill/vim-monokai'
+        Plugin 'vim-airline/vim-airline'
+        Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
