@@ -18,6 +18,8 @@ The big strength of golang lies within the concept of concurrencies (**goroutine
 
 Goroutine1 executes functions 1-4, as soon as it reaches 5. it stops, as it now waits for the input coming from **"c"**. That **"c"** comes from goroutine2 from Step 3.
 If, for whatever reason, gorotuine steps 1-2 take longers than the steps 1-4 of goroutine1, the goroutine1 will wait for the input given be goroutine2.
-**That is a huge benefit!**
+**That is a huge benefit!**, as go allows for communication and synchroniziation.
 
-            
+Only the SENDER is allowed to close the channel, never the RECEIVER. 
+
+- Select statements are helpful. Because if one has two goroutines, but the programms prints the incoming results from channels from goroutines1 and 2 it will always wait for the slower goroutine the be finished before it prints the second print-statement.
