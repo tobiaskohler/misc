@@ -1,6 +1,7 @@
 set number
 set tabstop=4
 set expandtab
+set hlsearch
 filetype indent on
 set autoindent
 
